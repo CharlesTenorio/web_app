@@ -14,7 +14,6 @@ def lista_blog():
 class EmailView(generic.FormView):
     template_name = 'index.html'
     form_class = DadosEmailForm
-
     def form_valid(self, form):
         ret_original = super().form_valid(form)
 
