@@ -18,6 +18,7 @@ from django.urls import path
 from .views import home, enviar_email
 
 urlpatterns = [
+
     path('home/', home),
     path('admin/', admin.site.urls),
     path('enviar_email/', enviar_email,name="enviar_email" )
